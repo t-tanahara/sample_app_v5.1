@@ -5,6 +5,8 @@ RUN apt-get update
 RUN apt-get install -y nodejs
 RUN apt-get install -y sqlite3
 
+RUN gem install bundler
+
 RUN mkdir /myapp
 WORKDIR /myapp
 
