@@ -12,7 +12,7 @@ gem 'jbuilder',       '2.7.0'
 gem 'bcrypt',         '3.1.11'
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'mysql2'
   gem 'byebug',  '9.0.6', platform: :mri
 end
 

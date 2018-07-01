@@ -11,3 +11,15 @@ services:
       RAILS_ENV: development
     volumes:
       - ".:/myapp"
+    depends_on:
+      - db
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./docker/mysql/volume:/var/lib/mysql
+volumes:
+  mysql-data:
