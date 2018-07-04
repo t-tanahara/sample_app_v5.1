@@ -2,7 +2,7 @@ FROM ruby:2.5.1
 ENV LANG C.UTF-8
 
 RUN apt-get update
-RUN apt-get install -y nodejs sqlite3 mysql-client --no-install-recommends
+RUN apt-get install -y nodejs mysql-client --no-install-recommends
 
 RUN gem install bundler
 

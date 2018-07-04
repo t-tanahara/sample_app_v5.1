@@ -26,4 +26,5 @@
 /spring/*.pid
 
 # docker db volume files
+/docker/mysql/volume/*
 !.gitkeep
